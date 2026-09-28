@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ckb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دابەزاندنی ESign</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f7;
+            text-align: center;
+            direction: rtl;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 320px;
+            width: 85%;
+        }
+        .btn {
+            background-color: #007aff;
+            color: white;
+            padding: 14px 24px;
+            font-size: 17px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>دابەزاندنی ئەپی ESign</h2>
+        <p>ئەگەر پەنجەرەی دابەزاندن دەرنەکەوت، کلیک لە دوگمەکەی خوارەوە بکە:</p>
+        <a class="btn" href="itms-services://?action=download-manifest&url=https://faro813.github.io/ios-install/manifest.plist">دابەزاندن</a>
+    </div>
+
+    <script>
+        // خۆکارانە فەرمانی دابەزاندن دەنێرێت بۆ سەفاری
+        window.location.href = "itms-services://?action=download-manifest&url=https://faro813.github.io/ios-install/manifest.plist";
+    </script>
+</body>
+</html>
